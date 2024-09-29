@@ -38,7 +38,6 @@ public class BankAccount {
         if (this.amount - amount < 0) {
             throw new IllegalStateException("Нельзя снять больше чем есть на счету");
         }
-
         this.amount = this.amount - amount;
         otherAccount.amount += amount;
     }

@@ -22,7 +22,7 @@ class BankAccountTest {
     }
 
     @Test
-    void t() {
+    void shouldReturnFullName() {
         BankAccount account = new BankAccount("a", "b");
         String[] fullName = account.getFullName();
         String[] expectedName = {"a", "b"};
